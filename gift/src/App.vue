@@ -1,7 +1,7 @@
 <template>
   <div>
-    <MainContent />
-    <Footer />
+  <MainContent />
+  <Footer />
   </div>
 </template>
 
@@ -14,10 +14,9 @@ import Footer from './views/Footer'
       MainContent,
       Footer
    },
-    data: () => ({
-
-    }),
+    data: () => ({}),
   }
 </script>
 
-<style lang="scss"></style>
+<style lang="scss">
+</style>
