@@ -1,22 +1,22 @@
 <template>
   <div>
-  <MainContent />
-  <Footer />
+    <MainLogo />
+    <router-view />
+    <MainFooter />
   </div>
 </template>
 
 <script>
-import MainContent from './components/MainContent'
-import Footer from './views/Footer'
+import MainFooter from './views/MainFooter'
+import MainLogo from './components/MainLogo'
+
   export default {
     name: 'App',
     components: {
-      MainContent,
-      Footer
-   },
-    data: () => ({}),
+      MainLogo,
+      MainFooter
+   }
   }
 </script>
 
-<style lang="scss">
-</style>
+<style lang="scss"></style>

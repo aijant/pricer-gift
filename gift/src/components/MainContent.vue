@@ -1,7 +1,6 @@
 <template>
   <main>
     <section class="contents">
-      <logo />
       <p class="contents__lead-img">
         <picture>
           <source
@@ -22,20 +21,20 @@
         /></picture>
       </div>
       <div class="contents__btn">
-        <a href="question/" class="mod-btnSimpleBrown">診断スタート</a>
+        <a class="mod-btnSimpleBrown" @click="goToQuestion()">診断スタート</a>
       </div>
     </section>
   </main>
 </template>
 
 <script>
-import Logo from './Logo'
-
 export default {
   name: 'MainContent',
-   components: {
-   logo: Logo
-   },
+  methods:{
+  goToQuestion() {
+    this.$router.push({path:'question'})
+  }
+  }
 }
 </script>
 

@@ -1,5 +1,5 @@
 <template>
-  <footer id="footer" class="footer">
+  <footer class="footer">
     <div class="footer__inner">
       <a
         href="https://crosset.onward.co.jp/"
