@@ -5,11 +5,11 @@
         <div class="questionView__inner">
           <h2 class="questionView__text">あなたが送りたい相手の性別は</h2>
           <div class="questionList">
-            <a href="#" class="questionList__item">
-              <p>男 性</p>
+            <a href="#" class="questionList__item" @click="goToQuestion('man')">
+              <p>SHAPE</p>
             </a>
-            <a href="#" class="questionList__item">
-              <p>女 性</p>
+            <a href="#" class="questionList__item" @click="goToQuestion('woman')">
+              <p>NEW FEATURE</p>
             </a>
           </div>
         </div>
@@ -27,14 +27,13 @@
 <script>
 export default {
   name: 'Question',
-  data() {
-      return {
-          isGender: ""
-      }
-  },
   methods: {
        back() {
       this.$router.go(-1);
+    },
+     goToQuestion(type) {
+      console.log(type)
+      this.$router.push({ path: `/questionItem/`, params: { type: type } });
     },
   },
 }
