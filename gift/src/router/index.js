@@ -12,10 +12,15 @@ const routes = [
     component: MainContent
   },
   {
-    path: '/question',
+    path: '/question/',
     name: 'Question',
-    component: Question
-  }
+    component: Question,
+  },
+  {
+    path: "/questionItem/",
+    name: 'QuestionItem',
+    component: () => import("../views/QuestionItem.vue"),
+  },
 ]
 
 const router = new VueRouter({
